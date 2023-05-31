@@ -28,7 +28,18 @@ public class EmployeeDTO {
     private String dept;
     private String city;
 
-    //    @DateFormat
+    @Override
+    public String toString() {
+        return "EmployeeDTO{" +
+                "aadhar=" + aadhar +
+                ", name='" + name + '\'' +
+                ", dob=" + dob +
+                ", age=" + age +
+                ", dept='" + dept + '\'' +
+                ", city='" + city + '\'' +
+                '}';
+    }
+//    @DateFormat
     //    @JsonDeserialize(using = CustomDateDeserializer.class)
     //    private Date dob;
     //    @Pattern(regexp = "^(0[1-9]|1\\d|2[0-9]|3[0-1])/(0[1-9]|1[0-2])/\\d{4}$", message = "Invalid date format. Please use the format dd/MM/yyyy.")
